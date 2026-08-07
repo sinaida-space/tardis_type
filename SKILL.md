@@ -266,7 +266,7 @@ email, and chat, and it renders as a normal space in a terminal.
 | Russian | `«ёлочки»` | `„лапки"` |
 | English | `"curly"` | `'single'` |
 
-Straight `"` and `'` are forbidden in prose. Apostrophe is always `'` (`don't`, not
+Straight `"` and `'` are forbidden in prose. Apostrophe is always `’` (`don’t`, not
 `don't`). Russian keeps the outer `«»` even when the quoted string is English:
 `«TouchDesigner»`.
 
@@ -346,7 +346,7 @@ form only in a document that is explicitly GOST-conforming, and then keep it nbs
 |---|---|
 | HTML, JSX text, Markdown-in-HTML | `&nbsp;` (or the literal character) |
 | Markdown, plain text, email body, chat, .docx, .pptx | the literal U+00A0 character |
-| JS/TS/Python string literal | the literal character, or ` ` |
+| JS/TS/Python string literal | the literal character, or ` ` |
 | JSON / YAML values | the literal character |
 | CSS `content:` | `"\00a0"` |
 | LaTeX | `~` |
