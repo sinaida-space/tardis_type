@@ -33,9 +33,9 @@ import re
 import sys
 import unicodedata
 
-NBSP = " "
-NNBSP = " "
-THINSP = " "
+NBSP = " "
+NNBSP = " "
+THINSP = " "
 SHY = "­"
 EMDASH = "—"
 ENDASH = "–"
@@ -80,8 +80,8 @@ SLOP_PATTERNS = [
         "not-a-but-b",
         re.compile(
             r"\b(?:"
-            r"not\s+just\s+\w[\w\s]{0,30}?,\s*(?:it(?:'|')s|but|it\s+is)"
-            r"|isn(?:'|')t\s+(?:about\s+)?\w[\w\s]{0,30}?[,.]\s*it(?:'|')s"
+            r"not\s+just\s+\w[\w\s]{0,30}?,\s*(?:it(?:'|’)s|but|it\s+is)"
+            r"|isn(?:'|’)t\s+(?:about\s+)?\w[\w\s]{0,30}?[,.]\s*it(?:'|’)s"
             r"|less\s+about\s+\w[\w\s]{0,25}?,\s*more\s+(?:about|of)"
             r"|\w+,\s+not\s+(?:decoration|noise|a\s+\w+|just\s+\w+)"
             r")",
@@ -104,7 +104,7 @@ SLOP_PATTERNS = [
         re.compile(
             r"\b(?:thrilled\s+to\s+announce|excited\s+to\s+share|passionate\s+about"
             r"|grateful\s+for\s+the\s+opportunity|delve\s+into|unlock\s+the\s+power"
-            r"|game[-\s]chang(?:er|ing)|seamless(?:ly)?|in\s+today(?:'|')s\s+"
+            r"|game[-\s]chang(?:er|ing)|seamless(?:ly)?|in\s+today(?:'|’)s\s+"
             r"fast[-\s]paced\s+world|elevate\s+your)\b",
             re.I,
         ),
@@ -130,14 +130,14 @@ HARD_VOCAB = [
     "rich cultural heritage", "rich history", "vibrant tapestry",
     "underscores the importance", "underscores its", "highlights the importance",
     "leaving an indelible mark", "deeply rooted in", "resonates with",
-    "in today's fast-paced", "in today's fast-paced",
+    "in today's fast-paced", "in today’s fast-paced",
     "погрузиться в", "раскрыть потенциал", "вывести на новый уровень",
     "богатое наследие", "богатая история", "глубоко укоренён",
     "глубоко укоренен", "неизгладимый след", "в современном мире",
     "в эпоху цифровых технологий", "играет ключевую роль", "ключевую роль",
     "играет важную роль", "неотъемлемой частью", "подчёркивает значимость",
     "подчеркивает значимость", "отражает более широкий", "знаковый момент",
-    "поворотной точкой", "комплексный подход", "бесшумн",
+    "поворотной точкой", "комплексный подход", "бесшовн",
 ]
 
 # §7.1 — words that are fine once and damning in a cluster
@@ -162,7 +162,7 @@ PROSE_PATTERNS = [
                 r"|boasts?|is\s+home\s+to)\b"
                 r"|\b(?:является|служит|выступает\s+в\s+качестве"
                 r"|представляет\s+собой)\b", re.I | re.U),
-     "copula avoidance: write "is" (§7.2)"),
+     "copula avoidance: write “is” (§7.2)"),
 
     ("inflated-significance",
      re.compile(r"\b(?:a\s+(?:pivotal|crucial|key|defining)\s+(?:moment|role|part)"
@@ -180,13 +180,13 @@ PROSE_PATTERNS = [
                 r"|symboli[sz]ing|contributing|cultivating|fostering|encompassing"
                 r"|showcasing|demonstrating|illustrating|allowing|enabling|creating)\b",
                 re.I),
-     "superficial "-ing" tail: cut it or give it a subject (§7.4)"),
+     "superficial “-ing” tail: cut it or give it a subject (§7.4)"),
 
     ("false-range",
      re.compile(r"\bfrom\s+(?:the\s+)?\w[\w\s]{2,25}\s+to\s+(?:the\s+)?\w[\w\s]{2,25}"
                 r",\s*from\b"
                 r"|\bот\s+\w[\w\s]{2,25}\s+до\s+\w[\w\s]{2,25},\s*от\b", re.I | re.U),
-     "false range: "from X to Y" where X and Y share no scale (§7.8)"),
+     "false range: “from X to Y” where X and Y share no scale (§7.8)"),
 
     ("vague-attribution",
      re.compile(r"\b(?:experts?\s+(?:say|argue|believe|note)|observers?\s+have"
@@ -215,9 +215,9 @@ PROSE_PATTERNS = [
      "filler phrase: see the table in §7.10"),
 
     ("signposting",
-     re.compile(r"\b(?:let(?:'|')s\s+(?:dive|explore|break\s+this\s+down|look\s+at|begin)"
-                r"|here(?:'|')s\s+what\s+you\s+need\s+to\s+know"
-                r"|without\s+further\s+ado|now\s+let(?:'|')s)\b"
+     re.compile(r"\b(?:let(?:'|’)s\s+(?:dive|explore|break\s+this\s+down|look\s+at|begin)"
+                r"|here(?:'|’)s\s+what\s+you\s+need\s+to\s+know"
+                r"|without\s+further\s+ado|now\s+let(?:'|’)s)\b"
                 r"|\b(?:давайте\s+разберёмся|давайте\s+разберемся|итак,\s+начнём"
                 r"|итак,\s+начнем|рассмотрим\s+подробнее)\b", re.I | re.U),
      "signposting: doing the thing replaces announcing it (§7.11)"),
@@ -231,13 +231,13 @@ PROSE_PATTERNS = [
      "persuasive authority trope: just say the point (§7.12)"),
 
     ("fake-candid",
-     re.compile(r"(?:^|(?<=[.!?]\s))(?:Honestly\?|Look,|Here(?:'|')s\s+the\s+thing"
-                r"|The\s+thing\s+is,|Let(?:'|')s\s+be\s+honest|Real\s+talk"
+     re.compile(r"(?:^|(?<=[.!?]\s))(?:Honestly\?|Look,|Here(?:'|’)s\s+the\s+thing"
+                r"|The\s+thing\s+is,|Let(?:'|’)s\s+be\s+honest|Real\s+talk"
                 r"|Честно\s+говоря,|Скажем\s+прямо,|Давайте\s+начистоту)", re.U),
      "fake-candid opener: a person being honest just says the thing (§7.14)"),
 
     ("sycophancy",
-     re.compile(r"\b(?:great\s+question|you(?:'|')re\s+absolutely\s+right"
+     re.compile(r"\b(?:great\s+question|you(?:'|’)re\s+absolutely\s+right"
                 r"|i\s+hope\s+this\s+helps|let\s+me\s+know\s+if"
                 r"|would\s+you\s+like\s+me\s+to|excellent\s+point)\b"
                 r"|\b(?:отличный\s+вопрос|надеюсь,\s+это\s+поможет"
@@ -285,12 +285,12 @@ def is_restating_list_item(line):
     if not m:
         return None
     label, body = m.groups()
-    label_words = {w.lower() for w in re.findall(r"[\w''-]{4,}", label)}
-    body_words = {w.lower() for w in re.findall(r"[\w''-]{4,}", body)}
+    label_words = {w.lower() for w in re.findall(r"[\w’'-]{4,}", label)}
+    body_words = {w.lower() for w in re.findall(r"[\w’'-]{4,}", body)}
     return m.group(0)[:60] if label_words & body_words else None
 
 TRIAD = re.compile(
-    r"\b\w[\w''-]*,\s+\w[\w''-]*,?\s+(?:and|или|и)\s+\w[\w''-]*\b", re.U)
+    r"\b\w[\w’'-]*,\s+\w[\w’'-]*,?\s+(?:and|или|и)\s+\w[\w’'-]*\b", re.U)
 
 TITLE_CASE_HEADING = re.compile(r"^#{1,6}\s+(.*)$")
 
@@ -313,7 +313,7 @@ def check_prose(text, lang):
         if lang == "en":
             hm = TITLE_CASE_HEADING.match(clean)
             if hm:
-                words = [w for w in re.findall(r"[A-Za-z][\w''-]*", hm.group(1))]
+                words = [w for w in re.findall(r"[A-Za-z][\w’'-]*", hm.group(1))]
                 caps = [w for w in words if w[0].isupper()]
                 if len(words) >= 4 and len(caps) >= len(words) - 1:
                     issues.append((i, "title-case",
@@ -459,11 +459,11 @@ def fix_quotes(t, lang):
         t = re.sub(r'"([^"\n]{1,200})"', ru, t)
     else:
         def en(m):
-            return """ + m.group(1) + """
+            return "“" + m.group(1) + "”"
 
         t = re.sub(r'"([^"\n]{1,200})"', en, t)
-        t = re.sub(r"(?<=\w)'(?=\w)", "'", t)        # don't -> don't
-        t = re.sub(r"'([^'\n]{1,80})'", "'\\1'", t)
+        t = re.sub(r"(?<=\w)'(?=\w)", "’", t)        # don't -> don’t
+        t = re.sub(r"'([^'\n]{1,80})'", "‘\\1’", t)
     return t
 
 
@@ -474,7 +474,7 @@ def fix_nbsp(t, lang):
     # 1. short words / prepositions glue forward
     words = sorted(glue_after, key=len, reverse=True)
     pat = re.compile(
-        r"(?<![\w ])(" + "|".join(re.escape(w) for w in words) + r")[ ](?=[\w«\"("])",
+        r"(?<![\w ])(" + "|".join(re.escape(w) for w in words) + r")[ ](?=[\w«\"(“])",
         re.I if lang == "en" else re.U,
     )
     prev = None
@@ -564,7 +564,7 @@ def check(text, lang, path):
 
         if '"' in clean or re.search(r"(?<=\s)'|'(?=\s)", clean):
             add(i, "straight-quotes",
-                "straight quotes: use «» in Russian, "" in English", clean[:60])
+                "straight quotes: use «» in Russian, “” in English", clean[:60])
 
         if "..." in clean:
             add(i, "ellipsis", "use … (U+2026), not three periods", "...")
@@ -581,13 +581,13 @@ def check(text, lang, path):
                 add(i, "homoglyph", "Cyrillic and Latin mixed inside one word", w)
 
         # line ends on a glue word (only meaningful when the author controls wraps)
-        last = re.findall(r"[\w''-]+", clean)
+        last = re.findall(r"[\w’'-]+", clean)
         if last:
             tail = last[-1].lower()
             glue = RU_SHORT_AFTER if lang == "ru" else EN_SHORT_AFTER
             if tail in glue and len(clean) > 40:
                 add(i, "dangling-word",
-                    f"line ends on "{tail}": glue it forward with a nbsp", tail)
+                    f"line ends on “{tail}”: glue it forward with a nbsp", tail)
 
     # widow check: one-word final line of a paragraph, measured at 72 cols
     for para_start, para in iter_paragraphs(lines):
