@@ -122,7 +122,7 @@ and en&nbsp;dashes stay here: a typeset text is not a&nbsp;typewritten&nbsp;one.
 ## About
 
 Made by [Sinaida&nbsp;Krivchenko](https://sinaida.eu), a new media artist working in
-interactive projection, TouchDesigner, GLSL shaders, and generative web pieces, based in
+interactive projections, TouchDesigner, and generative web pieces, currently based in
 Prague.
 
 Instagram: [@sin.ai.da](https://www.instagram.com/sin.ai.da/)
