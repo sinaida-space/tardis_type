@@ -1,6 +1,6 @@
 ---
 name: typography
-description: Professional typography and prose-quality pass for every text written for Sinaida in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and "not A, but B" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, commands, URLs, or file paths.
+description: Professional typography and prose-quality pass for every text written for Sinaida in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and "not A, but B" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, code comments, commit messages, config files, commands, URLs, or file paths.
 ---
 
 # Typography — Sinaida's house rules
@@ -34,6 +34,41 @@ is a well-set piece of slop. Fix the sentence first, then the spaces.
 
 If a string is both (a UI label that is also a translation key value) — typography the
 displayed value, leave the key alone.
+
+### 0.1 The test: will a human read this rendered?
+
+One question decides scope. **Does this string reach a human as rendered text, in a
+browser, a document, a caption, a chat reply?** Yes, apply the skill. No, hands off.
+
+Code is "no". Everything a compiler, linter, shell or parser reads is "no", and that
+includes the parts of a source file that look like prose:
+
+- **Code comments, JSDoc, docstrings, TODO notes.** These read like English, and that
+  is the trap. They are addressed to developers reading source, not to an audience.
+  Leave the em dashes, leave the ordinary spaces, leave the wording alone.
+- **Commit messages, PR descriptions, branch names, changelog entries.**
+- **Config files** of any kind: eslint, tailwind, vite, tsconfig, package.json, CI YAML.
+  Including their comments.
+- **Test names, fixture data, mock strings, console.log and error messages** aimed at
+  developers. A user-facing error message shown in the UI is prose; a stack-trace
+  string is not.
+- **Type names, enum members, CSS class names, data attributes, IDs.**
+
+### 0.2 Do not run typocheck on source
+
+`scripts/typocheck.py` is for prose deliverables: .md, .txt, .docx, exported copy.
+**Never point it at `.ts`, `.tsx`, `.js`, `.py`, `.json`, `.yml` or a whole repo.** It
+will flag comments, identifiers and code punctuation, and the resulting "fixes" break
+things or churn the diff for nothing.
+
+### 0.3 Never let typography drive a code edit
+
+If a linter, formatter or type-checker complains about typographic characters that are
+correctly placed in user-facing text, **fix the tooling, not the text.** Non-breaking
+spaces in JSX text nodes stay. Configure the rule to allow them.
+
+Equally, never widen a code task into a typography pass. Asked to fix a build, fix the
+build. Do not retype comments, rewrite variable names or reflow strings on the way past.
 
 ---
 
