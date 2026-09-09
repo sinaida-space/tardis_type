@@ -707,3 +707,27 @@ plainly using dashes on purpose. Matching the author beats scrubbing the tell. �
   code blocks, data and link targets stay untouched.
 - **Embedded** (this skill running as one step of a larger task). Output the final prose
   only. No draft, no audit list, no summary.
+
+### 10.3 Self-critique gate — before declaring done
+
+The loop in §10 has no stop rule on its own. This gate is the stop rule. Answer every
+line explicitly; a "no" carries the offending span, quoted.
+
+| # | Check | Pass condition |
+|---|---|---|
+| 1 | §1.1–1.2 rhetorical dash | zero `—` as a break/pause/appositive; surviving RU grammatical dashes counted, ≤1 |
+| 2 | §1.3 "not A, but B" | zero, every shape, both languages |
+| 3 | §7 tells | every subsection walked; each remaining hit has a defensible reason logged (§8, §10.1), not left silent |
+| 4 | §7 rule 2 — no fabrication | no name, number, date, quote, venue, citation in the rewrite that was absent from the source |
+| 5 | §3 line ends | last line of every paragraph, heading, button, list item read; widows rewritten then glued |
+| 6 | §4–5 micro | quotes, ellipsis, ranges, units, symbols converted |
+| 7 | checker | `typocheck.py` clean, or each remaining flag annotated with a reason |
+
+**Iteration cap: three full passes.** If pass N reintroduces a tell that pass N−1
+removed, stop. Keep pass N−1's fix for that span and flag the conflict to Sinaida
+rather than looping toward it again. Non-monotonic edits (a rewrite that fixes §7.13
+but opens a §1.3) are a signal the sentence needs her, not another automatic pass.
+
+**"Finished" is a report, not a word.** Name what was checked and what was kept:
+"typocheck clean; two §7.13 hits kept as her phrasing (§10.1); all paragraph tails
+filled" — never a bare "done" or "clean".
