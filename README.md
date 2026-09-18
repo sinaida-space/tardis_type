@@ -76,6 +76,7 @@ git clone https://github.com/sinaida-space/tardis_type.git
 mkdir -p ~/.claude/skills/typography
 cp tardis_type/SKILL.md ~/.claude/skills/typography/SKILL.md
 cp -r tardis_type/scripts ~/.claude/skills/typography/scripts
+cp -r tardis_type/references ~/.claude/skills/typography/references
 ```
 
 Claude&nbsp;Code picks it up automatically once it sits in `~/.claude/skills/typography/`.
