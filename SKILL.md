@@ -1,6 +1,6 @@
 ---
 name: typography
-description: Professional typography and prose-quality pass for every text written for Sinaida in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and "not A, but B" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, code comments, commit messages, config files, commands, URLs, or file paths.
+description: "Professional typography and prose-quality pass for every text written for Sinaida in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and \"not A, but B\" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, code comments, commit messages, config files, commands, URLs, or file paths."
 ---
 
 # Typography — Sinaida's house rules
