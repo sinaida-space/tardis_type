@@ -5,8 +5,6 @@
 A typography and prose-quality skill for Claude Code. Small file, bigger on
 the&nbsp;inside.
 
-> Production mirror. Development and issue tracking run in a private development environment; releases are published here.
-
 ## Why this exists
 
 Most AI-generated prose reads the same way, and it fails on two separate levels of
@@ -130,3 +128,7 @@ Prague.
 
 Instagram: [@sin.ai.da](https://www.instagram.com/sin.ai.da/)
 Website: [sinaida.eu](https://sinaida.eu)
+
+This repo is a production mirror.
+
+Development and issue tracking run in a private development environment; releases are published here.
