@@ -1,9 +1,9 @@
 ---
 name: typography
-description: "Professional typography and prose-quality pass for every text written for Sinaida in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and \"not A, but B\" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, code comments, commit messages, config files, commands, URLs, or file paths."
+description: "Professional typography and prose-quality pass for every text written for the user in Russian or English — non-breaking spaces, no widows/orphans, correct quotes/dashes/ellipses/units, the hard ban on em-dash rhetoric and \"not A, but B\" constructions, and the full anti-slop pass that strips AI vocabulary, inflated significance, rule-of-three padding, hedging, signposting, and sycophancy. Apply to ALL prose everywhere: websites, decks, emails, Instagram captions, .docx, README, artist statements, UI copy, and chat replies. Never applies to code, code comments, commit messages, config files, commands, URLs, or file paths."
 ---
 
-# Typography — Sinaida's house rules
+# Typography — house rules
 
 This skill is **always on** for prose. It has three layers:
 
@@ -29,7 +29,7 @@ is a well-set piece of slop. Fix the sentence first, then the spaces.
 | Instagram/LinkedIn posts, captions | URLs, slugs, file paths, filenames |
 | .docx / .pptx / PDF deliverables | JSON keys, YAML keys, env vars |
 | README, docs, artist statements | Git commit messages and branch names |
-| Chat replies to Sinaida | Alt text of decorative images (nbsp fine, but don't fuss) |
+| Chat replies to the user | Alt text of decorative images (nbsp fine, but don't fuss) |
 | Subtitles, video captions | Anything inside a fenced code block |
 
 If a string is both (a UI label that is also a translation key value) — typography the
@@ -79,7 +79,7 @@ build. Do not retype comments, rewrite variable names or reflow strings on the w
 ### 1.1 Em dash `—` as a rhetorical device: forbidden
 
 No `—` used as a parenthetical break, a dramatic pause, an appositive, or a "and here
-comes the punchline" beat. That pattern is the single loudest AI-slop signal and Sinaida
+comes the punchline" beat. That pattern is the single loudest AI-slop signal and the user
 hates it.
 
 **Do not "fix" it by swapping in ` – ` or ` - ` in the same slot.** Same crime, thinner
@@ -114,7 +114,7 @@ When a dash does survive: `слово&nbsp;— слово` (nbsp before, ordinar
 the dash can never start a line).
 
 English gets **no exception**. English does not need the dash grammatically, so English
-prose written for Sinaida contains zero `—`.
+prose written for the user contains zero `—`.
 
 ### 1.3 "Not A, but B" contrastive framing: forbidden
 
@@ -389,7 +389,7 @@ stated reason.
 
 ### 10.1 Voice sample beats every rule here
 
-If Sinaida supplies a sample of her own writing, read it first and match its habits:
+If the user supplies a sample of her own writing, read it first and match its habits:
 sentence length, paragraph openings, punctuation density, recurring phrases. A real
 sample outranks §7 and §8 entirely, and it outranks §1.1 for that text only if she is
 plainly using dashes on purpose. Matching the author beats scrubbing the tell. §1.3, §2,
@@ -420,7 +420,7 @@ line explicitly; a "no" carries the offending span, quoted.
 | 7 | checker | `typocheck.py` clean, or each remaining flag annotated with a reason |
 
 **Iteration cap: three full passes.** If pass N reintroduces a tell that pass N−1
-removed, stop. Keep pass N−1's fix for that span and flag the conflict to Sinaida
+removed, stop. Keep pass N−1's fix for that span and flag the conflict to the user
 rather than looping toward it again. Non-monotonic edits (a rewrite that fixes §7.13
 but opens a §1.3) are a signal the sentence needs her, not another automatic pass.
 

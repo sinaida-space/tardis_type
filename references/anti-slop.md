@@ -7,7 +7,7 @@ Loaded from SKILL.md for every written deliverable (§10 step 2).
 ## 7. Prose quality: the anti-slop pass
 
 Adapted from Wikipedia's *Signs of AI writing* (WikiProject AI Cleanup) and the
-`blader/humanizer` skill, rewritten for Sinaida's registers and for Russian as well as
+`blader/humanizer` skill, rewritten for the user's registers and for Russian as well as
 English.
 
 Two rules govern this whole section:
@@ -16,7 +16,7 @@ Two rules govern this whole section:
   depth does not have to be uniform. Compress the dull parts, dwell where a human would,
   merge or split paragraphs freely.
 - **Never invent a fact to fix a sentence.** No name, number, date, quote, venue, or
-  citation may enter the text that was not in the source or given by Sinaida. A vague
+  citation may enter the text that was not in the source or given by the user. A vague
   claim gets cut, never decorated. (Fiction and concept texts for art pieces are exempt:
   there, invented detail is the work.)
 
@@ -151,7 +151,7 @@ These pretend to cut through noise before restating an ordinary point. Say the p
 `the currency of…` · `X — это язык Y`, `новая валюта внимания`.
 
 Reusable-sounding profundity with no precision behind it. Replace with the concrete claim
-it is gesturing at. Sinaida's artist statements are the highest-risk surface for this:
+it is gesturing at. The user's artist statements are the highest-risk surface for this:
 they invite it, and it is exactly where it reads worst.
 
 ### 7.14 Fake-candid openers
@@ -173,7 +173,7 @@ imitating one.
 `Great question!`, `You're absolutely right`, `I hope this helps`, `Let me know if…`,
 `Would you like me to…`, `Here is a…`, `Of course!`, `Certainly!` These belong to
 conversation, not to a delivered text, and they should not appear in one. In chat replies
-to Sinaida they are also just noise: answer, do not flatter.
+to the user they are also just noise: answer, do not flatter.
 
 ### 7.17 Generic positive conclusions
 
@@ -219,7 +219,7 @@ own:
 
 - **Polish.** Perfect grammar means an editor, not a model.
 - **Mixed registers.** Casual and technical in one paragraph is a person in a technical
-  field, which is exactly what Sinaida is.
+  field, which is exactly what the user is.
 - **Dry prose.** AI has *specific* tells. Dryness without them is just dry.
 - **Formal vocabulary.** §7.1 bans specific words, not all long ones. Do not flatten
   `ostensibly` or `констатировать` because they sound bookish.
@@ -252,7 +252,7 @@ When these appear, edit less:
 ## 9. Where this skill overrules the humanizer source
 
 The upstream skill optimises for "does not look AI-written" on English Wikipedia. This
-one optimises for Sinaida's published prose in two languages. Three deliberate conflicts:
+one optimises for the user's published prose in two languages. Three deliberate conflicts:
 
 | Upstream says | Here | Why |
 |---|---|---|

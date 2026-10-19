@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-typocheck — typography linter for Sinaida's RU/EN prose.
+typocheck — typography linter for RU/EN prose.
 
 Usage:
     python3 typocheck.py FILE [FILE ...] [--lang ru|en|auto] [--fix] [--html]
