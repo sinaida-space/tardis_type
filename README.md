@@ -2,13 +2,11 @@
 
 # Tardis&nbsp;Type
 
-A typography and prose-quality skill for Claude Code. Small file, bigger on
-the&nbsp;inside.
+A typography and prose-quality skill for Claude Code. Small file, bigger on the&nbsp;inside.
 
 ## Why this exists
 
-Most AI-generated prose reads the same way, and it fails on two separate levels of
-the&nbsp;text.
+Most AI-generated prose reads the same way, and it fails on two separate levels of&nbsp;the&nbsp;text.
 
 <!-- typocheck: off -->
 
@@ -79,8 +77,7 @@ cp -r tardis_type/scripts ~/.claude/skills/typography/scripts
 cp -r tardis_type/references ~/.claude/skills/typography/references
 ```
 
-Claude&nbsp;Code picks it up automatically once it sits in `~/.claude/skills/typography/`.
-To check a file by hand:
+Claude&nbsp;Code picks it up automatically once it sits in `~/.claude/skills/typography/`.&nbsp;To check a file by hand:
 
 ```bash
 python3 ~/.claude/skills/typography/scripts/typocheck.py path/to/file.md
@@ -100,7 +97,8 @@ sentence rather than a&nbsp;substitution.
 
 `--no-slop` runs typography only. `--slop-only` runs the prose pass only. Code fences,
 inline code, URLs, paths and HTML are masked out before any check runs, and a document
-that quotes bad examples on purpose can wrap them&nbsp;in:
+that quotes bad examples on purpose can wrap them
+in:
 
 ```html
 <!-- typocheck: off -->
@@ -114,16 +112,14 @@ The typography layer is Sinaida's house style. The prose-quality layer (§7–§
 from [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
 maintained by WikiProject AI&nbsp;Cleanup, by way of the MIT-licensed
 [blader/humanizer](https://github.com/blader/humanizer) skill, rewritten for two
-languages and for prose that gets published rather than&nbsp;edited into an
-encyclopedia.
+languages and for prose that gets published rather than&nbsp;edited into an&nbsp;encyclopedia.
 
 Where the two disagree, §9 of the skill records which one wins and why. Curly quotes
-and en&nbsp;dashes stay here: a typeset text is not a&nbsp;typewritten&nbsp;one.
+and en&nbsp;dashes stay here: a typeset text is not a&nbsp;typewritten one.
 
 ## About
 
-Made by [Sinaida&nbsp;Krivchenko](https://sinaida.eu), a new media artist working in
-interactive projections, TouchDesigner, and generative web pieces.
+Made by [Sinaida&nbsp;Krivchenko](https://sinaida.eu), a new media artist working in&nbsp;interactive projections, TouchDesigner, and generative web pieces.
 
 Instagram: [@sin.ai.da](https://www.instagram.com/sin.ai.da/)
 Website: [sinaida.eu](https://sinaida.eu)
