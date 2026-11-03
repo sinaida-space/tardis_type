@@ -95,7 +95,7 @@ glyph. Rewrite the sentence so no dash is wanted:
 |---|---|
 | `AI is a prosthetic — it restores capacity, it doesn't create.` | `AI is a prosthetic. It restores capacity. It doesn't create.` |
 | `Она работает с проекциями — светом, который живёт в пространстве.` | `Она работает с проекциями: со светом, который живёт в пространстве.` |
-| `The move to Prague — unplanned, disruptive — is still being metabolised.` | `The move to Prague was unplanned and disruptive. It is still being metabolised.` |
+| `The renovation — unplanned, disruptive — is still being absorbed.` | `The renovation was unplanned and disruptive. It is still being absorbed.` |
 
 ### 1.2 Em dash `—` where Russian grammar genuinely requires it: allowed, but last resort
 
@@ -132,7 +132,7 @@ information, give the rejected option its own sentence with its own reason, or d
 | `This isn't a filter, it's a generative shader.` | `This is a generative shader. Nothing is sampled from the source image.` |
 | `Это не декорация, это инфраструктура.` | `Это инфраструктура: без неё эстетика не выживает.` |
 
-### 1.4 The rest of the anti-voice (carried from her global rules)
+### 1.4 The rest of the anti-voice (carried from the author's own rules)
 
 Banned: "thrilled to announce", "passionate about", "excited to share", "grateful for
 the opportunity", "in today's fast-paced world", "delve", "unlock", "elevate",
@@ -389,7 +389,7 @@ stated reason.
 
 ### 10.1 Voice sample beats every rule here
 
-If the user supplies a sample of her own writing, read it first and match its habits:
+If the user supplies a sample of their own writing, read it first and match its habits:
 sentence length, paragraph openings, punctuation density, recurring phrases. A real
 sample outranks §7 and §8 entirely, and it outranks §1.1 for that text only if she is
 plainly using dashes on purpose. Matching the author beats scrubbing the tell. §1.3, §2,
@@ -422,7 +422,7 @@ line explicitly; a "no" carries the offending span, quoted.
 **Iteration cap: three full passes.** If pass N reintroduces a tell that pass N−1
 removed, stop. Keep pass N−1's fix for that span and flag the conflict to the user
 rather than looping toward it again. Non-monotonic edits (a rewrite that fixes §7.13
-but opens a §1.3) are a signal the sentence needs her, not another automatic pass.
+but opens a §1.3) are a signal the sentence needs the author, not another automatic pass.
 
 **"Finished" is a report, not a word.** Name what was checked and what was kept:
 "typocheck clean; two §7.13 hits kept as her phrasing (§10.1); all paragraph tails

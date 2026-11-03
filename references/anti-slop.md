@@ -239,7 +239,7 @@ Look for **clusters**. One triad means nothing. A triad plus `vibrant tapestry` 
 When these appear, edit less:
 
 - **Specific, hard-to-fabricate detail.** A real address, a strange quote, a named
-  street in Prague. Models round specifics off; people hoard them.
+  street in your own town. Models round specifics off; people hoard them.
 - **Mixed feelings, unresolved.** "I think it works and it still bothers me."
 - **Dated references.** Slang and in-jokes that pin to a year and a scene.
 - **Real variation in sentence length.** Machines drift to an even mid-length cadence.
@@ -256,7 +256,7 @@ one optimises for the user's published prose in two languages. Three deliberate 
 
 | Upstream says | Here | Why |
 |---|---|---|
-| Use straight quotes `"..."`; curly quotes are a ChatGPT tell | Curly quotes and «ёлочки» are **mandatory** (§4.1) | Straight quotes are a typewriter limitation. Her texts are typeset, not typed. |
+| Use straight quotes `"..."`; curly quotes are a ChatGPT tell | Curly quotes and «ёлочки» are **mandatory** (§4.1) | Straight quotes are a typewriter limitation. Typeset texts are not typed texts. |
 | Ban en dashes `–` along with em dashes | En dash **required** for numeric ranges, unspaced (§4.2) | A range dash is punctuation, not rhetoric. §1 bans the *rhetorical* dash only. |
 | Drop hyphens in predicate position (`the report is high quality`) | Follow standard orthography in each language | Russian compound rules are not English ones, and inconsistent hyphens read as errors, not as voice. |
 
