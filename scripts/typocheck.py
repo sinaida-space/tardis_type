@@ -585,7 +585,10 @@ def check(text, lang, path):
         if last:
             tail = last[-1].lower()
             glue = RU_SHORT_AFTER if lang == "ru" else EN_SHORT_AFTER
-            if tail in glue and len(clean) > 40:
+            # a glue word already tied back with a nbsp at the end of a
+            # sentence ("suited to\u00a0it.") has nothing to glue forward to
+            glued_back = re.search(r"\u00a0[\w’'-]+[.!?:…»”)]*\s*$", clean)
+            if tail in glue and len(clean) > 40 and not glued_back:
                 add(i, "dangling-word",
                     f"line ends on “{tail}”: glue it forward with a nbsp", tail)
 
